@@ -1,0 +1,21 @@
+{
+  "name": "teachers-matchmaker",
+  "version": "1.0.0",
+  "description": "teachers-matchmaker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "bjowczarek",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "util": "^0.11.0",
+    "fs": "0.0.1-security",
+    "body-parser": "^1.17.2"
+  }
+}
