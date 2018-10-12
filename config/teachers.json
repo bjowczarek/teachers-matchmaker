@@ -1,0 +1,119 @@
+{
+    "teachers": [
+        {
+            "name": "Iksinski",
+            "groups": [
+                "przedszkole",
+                "1-3",
+                "4-6"
+            ],
+            "availability": {
+                "0": {
+                    "start": 8,
+                    "end": 12
+                },
+                "1": {
+                    "start": 8,
+                    "end": 12
+                },
+                "2": {
+                    "start": 8,
+                    "end": 12
+                },
+                "3": {
+                    "start": 8,
+                    "end": 12
+                },
+                "4": {
+                    "start": 8,
+                    "end": 12
+                },
+                "5": {
+                    "start": 8,
+                    "end": 12
+                },
+                "6": {
+                    "start": 8,
+                    "end": 12
+                }
+            }
+        },
+        {
+            "name": "Igrekowski",
+            "groups": [
+                "7-8",
+                "liceum",
+                "dorośli"
+            ],
+            "availability": {
+                "0": {
+                    "start": 8,
+                    "end": 12
+                },
+                "1": {
+                    "start": 8,
+                    "end": 12
+                },
+                "2": {
+                    "start": 8,
+                    "end": 12
+                },
+                "3": {
+                    "start": 8,
+                    "end": 12
+                },
+                "4": {
+                    "start": 8,
+                    "end": 12
+                },
+                "5": {
+                    "start": 8,
+                    "end": 12
+                },
+                "6": {
+                    "start": 8,
+                    "end": 12
+                }
+            }
+        },
+        {
+            "name": "Zecinska",
+            "groups": [
+                "1-3",
+                "4-6",
+                "7-8"
+            ],
+            "availability": {
+                "0": {
+                    "start": 8,
+                    "end": 12
+                },
+                "1": {
+                    "start": 8,
+                    "end": 12
+                },
+                "2": {
+                    "start": 8,
+                    "end": 12
+                },
+                "3": {
+                    "start": 8,
+                    "end": 12
+                },
+                "4": {
+                    "start": 8,
+                    "end": 12
+                },
+                "5": {
+                    "start": 8,
+                    "end": 12
+                },
+                "6": {
+                    "start": 8,
+                    "end": 12
+                }
+            }
+        }
+
+    ]
+}
