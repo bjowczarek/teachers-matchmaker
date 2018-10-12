@@ -8,5 +8,14 @@
         "7-8",
         "liceum",
         "dorośli"
-    ]
+    ],
+    "daysMapping": {
+        "poniedziałek": "0",
+        "wtorek": "1",
+        "środa": "2",
+        "czwartek": "3",
+        "piątek": "4",
+        "sobota": "5",
+        "niedziela": "6"
+    }
 }

@@ -2,7 +2,7 @@
   "name": "teachers-matchmaker",
   "version": "1.0.0",
   "description": "teachers-matchmaker",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 1",
     "start": "nodemon server.js"

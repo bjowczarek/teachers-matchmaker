@@ -8,12 +8,21 @@ obj.getTeachers = function(day, start, end, groupType){
         let response = [];
         try {
             let obj = fw.readTeachersFile();
+            let cfg = fw.readConfigFile();
             obj.teachers.forEach(teacher => {
+                //validate
+                let validGroup = cfg.groupTypes.includes(groupType);
+                if (!validGroup)
+                    throw ("Invalid group type: " + groupType)
+                let validDay = cfg.daysMapping.hasOwnProperty(day);
+                if (!validDay)
+                    throw ("Invalid day name: " + day)
+                
+                //logic
                 let includes = teacher.groups.includes(groupType);
                 if (!includes)
                     return;
-                let fits = verifyIfInAvRange(teacher, day, start, end)
-                console.log(fits)
+                let fits = verifyIfInAvRange(teacher, cfg.daysMapping[day], start, end)
                 if (fits)
                     response.push(teacher.name)
             });
@@ -29,6 +38,8 @@ obj.uploadTeachers = async function (json){
 }
 
 function verifyIfInAvRange(teacher, day, start, end){
+    let mapping = '{"poniedziałek": "0", "wtorek": "1", "środa": "2", "czwartek": "3", "piątek": "4", "sobota": "5", "niedziela": "6" }'
+
     let teacherDay = teacher.availability[day];
     if (teacherDay.start > start)
         return false;

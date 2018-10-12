@@ -1,3 +1,6 @@
 node_modules/
 matchmaker.log
 package-lock.json
+teachers-private.json
+config-private.json
+

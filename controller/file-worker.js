@@ -12,13 +12,13 @@ obj.readTeachersFile = function (){
 }
 
 obj.readConfigFile = function () {
-    let config = JSON.parse(fs.readFileSync('../config/config.json', 'utf8'));
+    let config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../config/config.json'), 'utf8'));
     return config;
 }
 
 obj.writeTeachersFile = async function (jsonObj) {
     let str = JSON.stringify(jsonObj);
-    let status = await writeFileAsPromise(str, "../config/teachers.json")
+    let status = await writeFileAsPromise(str, path.resolve(__dirname, "../config/teachers.json"))
     return status;
 }
 
@@ -26,7 +26,7 @@ obj.writeGroupsToFile = async function (jsonObj) {
     let config = obj.readConfigFile();
     config.groupTypes = jsonObj
     let str = JSON.stringify(config);
-    let status = await writeFileAsPromise(str, "../config/config.json")
+    let status = await writeFileAsPromise(str, path.resolve(__dirname, "../config/config.json"))
     return status;
 }
 

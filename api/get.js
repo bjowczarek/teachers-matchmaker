@@ -33,7 +33,7 @@ obj.getTeachers = async function (req, res) {
     else{
         res.status(400).json({
             code: -1,
-            message: "Wrong query format! ex. ?day=1&start=10&end=12&group=\"przedszkole\""
+            message: "Wrong query format! ex. ?day=wtorek&start=10&end=12&group=\"przedszkole\""
         });
     }
     
